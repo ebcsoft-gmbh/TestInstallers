@@ -1,0 +1,90 @@
+{
+  "tasks": [
+    {
+      "uuid": "8ffd10fb-ba9e-4814-b6dd-645181d28cc1",
+      "name": "1295-0006 Btl-Werkhalle 920 Anlagen",
+      "type": "TECHNICALSYSTEM",
+      "description": "Verwaltung und Überwachung der technischen Systeme.",
+      "buildingName" : "Nebengebäude, Leipzig, Brühl 26",
+      "buildingUuid" : "b3-uuid"
+    }
+  ],
+  "technicalSystems": [
+    {
+      "uuid": "te1-uuid",
+      "name": "430KA - 1 - Kälteanlage",
+      "referencedEntityUuid": "b3-uuid",
+      "referencedEntityType": "PROPERTY",
+      "serialNumber": "2345",
+      "installationDate": "2010-01-30T07:06:17.038792"
+    },
+    {
+      "uuid": "te2-uuid",
+      "name": "443EL - 2 - KG-011-Elektro allgemein",
+      "referencedEntityUuid": "b3-uuid",
+      "referencedEntityType": "PROPERTY",
+      "serialNumber": "2346",
+      "installationDate": "2014-02-30T07:06:17.038792"
+    }
+  ],
+  "subunits": [
+    {
+      "uuid": "su1-uuid",
+      "name": "GL - 1 - Einspeisung Kälte",
+      "technicalSystemUuid": "te1-uuid",
+      "serialNumber": "1",
+      "installationDate": "2024-01-28T08:06:17.038792"
+    },
+    {
+      "uuid": "su2-uuid",
+      "name": "GE - 1 - KG-011-Einspeisung Elektro",
+      "technicalSystemUuid": "te2-uuid",
+      "serialNumber": "423",
+      "installationDate": "2024-01-29T08:06:17.038792"
+    },
+    {
+      "uuid": "su3-uuid",
+      "name": "SK - 2 - KG-011-Schaltschrank",
+      "technicalSystemUuid": "te2-uuid",
+      "serialNumber": "424",
+      "installationDate": "2023-01-10T08:06:17.038792"
+    }
+  ],
+  "devices": [
+    {
+      "uuid": "de1-uuid",
+      "name": "ZA - 1 - Kältezählung",
+      "subunitUuid": "su1-uuid",
+      "serialNumber": "543",
+      "installationDate": "2022-05-30T09:06:17.038792"
+    },
+    {
+      "uuid": "de2-uuid",
+      "name": "ZA - 0 - KG-0011-Zähler",
+      "subunitUuid": "su2-uuid",
+      "serialNumber": "576",
+      "installationDate": "2010-01-28T09:06:17.038792"
+    },
+    {
+      "uuid": "de3-uuid",
+      "name": "L1 - 0 - KG-11-Leitungsschutzschalter",
+      "subunitUuid": "su3-uuid",
+      "serialNumber": "578",
+      "installationDate": "2012-01-01T09:06:17.038792"
+    },
+    {
+      "uuid": "de4-uuid",
+      "name": "UA - 0 - KG-11-Überspannungsschutzelement",
+      "subunitUuid": "su3-uuid",
+      "serialNumber": "588",
+      "installationDate": "2024-02-28T09:06:17.038792"
+    },
+    {
+      "uuid": "de5-uuid",
+      "name": "FN - 0 - KG-011-FI-Schutzschalter",
+      "subunitUuid": "su3-uuid",
+      "serialNumber": "599",
+      "installationDate": "2024-04-30T09:06:17.038792"
+    }
+  ]
+}

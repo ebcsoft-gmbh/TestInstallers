@@ -1,0 +1,136 @@
+{
+  "tasks": [
+    {
+      "uuid": "8ffd10fb-ba9e-4814-b6dd-645190d28cc1",
+      "name": "1699-0006 - Btl-Werkhalle 920 Stromzähler Ablesung",
+      "type": "METERREADING",
+      "description": "Lesen Sie alle Stromzähler in diesem Gebäude ab",
+      "buildingName": "Hauptgebäude, Leipzig, Brühl 24",
+      "buildingUuid": "b1-uuid"
+    }
+  ],
+  "meters": [
+    {
+      "uuid": "m1-uuid",
+      "name": "E-Zähler Hauseinspeisung",
+      "buildingUuid": "b1-uuid",
+      "serialNumber": "19807425",
+      "qrcode": "QR001",
+      "installationDateTime": "2023-01-01T00:00:00.000Z"
+    },
+    {
+      "uuid": "m2-uuid",
+      "name": "Wasserzähler kalt",
+      "buildingUuid": "b1-uuid",
+      "serialNumber": "765983267",
+      "qrcode": "QR002",
+      "installationDateTime": "2023-01-02T00:00:00.000Z"
+    },
+    {
+      "uuid": "m3-uuid",
+      "name": "Gaszähler EVU",
+      "buildingUuid": "b1-uuid",
+      "serialNumber": "738393625",
+      "qrcode": "QR003",
+      "installationDateTime": "2023-01-03T00:00:00.000Z"
+    },
+    {
+      "uuid": "m4-uuid",
+      "name": "Wärmemengenzähler",
+      "buildingUuid": "b2-uuid",
+      "serialNumber": "8956798",
+      "qrcode": "QR004",
+      "installationDateTime": "2023-01-04T00:00:00.000Z"
+    },
+    {
+      "uuid": "m5-uuid",
+      "name": "E- Zähler PV Anlage",
+      "buildingUuid": "b2-uuid",
+      "serialNumber": "96223729",
+      "qrcode": "QR005",
+      "installationDateTime": "2023-01-05T00:00:00.000Z"
+    }
+  ],
+  "dataPoints": [
+    {
+      "name": "MFH HS7 Leistung Phase 1",
+      "uuid": "dp1-uuid",
+      "meterUuid": "m1-uuid",
+      "value": 110,
+      "dimension": "W",
+      "lastReadingDateTime": "2023-10-07T00:00:00.000Z"
+    },
+    {
+      "name": "MFH HS7 Leistung Phase 2",
+      "uuid": "dp2-uuid",
+      "meterUuid": "m1-uuid",
+      "value": 167,
+      "dimension": "W",
+      "lastReadingDateTime": "2023-09-07T00:00:00.000Z"
+    },
+    {
+      "name": "MFH HS7 Leistung Phase 3",
+      "uuid": "dp3-uuid",
+      "meterUuid": "m1-uuid",
+      "value": 287,
+      "dimension": "W",
+      "lastReadingDateTime": "2023-09-07T00:00:00.000Z"
+    },
+    {
+      "name": "MFH HS7 Kaltwasser M-Bus",
+      "uuid": "dp4-uuid",
+      "meterUuid": "m2-uuid",
+      "value": 140,
+      "dimension": "m³",
+      "lastReadingDateTime": "2023-10-05T00:00:00.000Z"
+    },
+    {
+      "name": "MFH HS7 Kaltwasser gesamt",
+      "uuid": "dp5-uuid",
+      "meterUuid": "m2-uuid",
+      "value": 389,
+      "dimension": "m³",
+      "lastReadingDateTime": "2023-09-05T00:00:00.000Z"
+    },
+    {
+      "name": "Zählerstand Gas EVU",
+      "uuid": "dp6-uuid",
+      "meterUuid": "m3-uuid",
+      "value": 892,
+      "dimension": "m³",
+      "lastReadingDateTime": "2023-10-04T00:00:00.000Z"
+    },
+    {
+      "name": "Zählerstand Gas EVU in kWh",
+      "uuid": "dp7-uuid",
+      "meterUuid": "m3-uuid",
+      "value": 3456,
+      "dimension": "kWh",
+      "lastReadingDateTime": "2023-09-04T00:00:00.000Z"
+    },
+    {
+      "name": "Wärmemenge Solarthermie",
+      "uuid": "dp8-uuid",
+      "meterUuid": "m4-uuid",
+      "value": 678,
+      "dimension": "kWh",
+      "lastReadingDateTime": "2023-10-01T00:00:00.000Z"
+    },
+    {
+      "name": "Solarthermie - Vorlauf",
+      "uuid": "dp9-uuid",
+      "meterUuid": "m4-uuid",
+      "value": 45,
+      "dimension": "°C",
+      "lastReadingDateTime": "2023-09-01T00:00:00.000Z"
+    },
+    {
+      "name": "Zählerstand Elektro PV",
+      "uuid": "dp10-uuid",
+      "meterUuid": "m5-uuid",
+      "value": 6734,
+      "dimension": "kWh",
+      "lastReadingDateTime": "2023-09-30T00:00:00.000Z"
+    }
+  ]
+}
