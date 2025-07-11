@@ -50153,9 +50153,9 @@ bOW(a){return A.cFz(a)},
 cFz(a){var s=0,r=A.q(t.N4),q,p,o
 var $async$bOW=A.m(function(b,c){if(b===1)return A.n(c,r)
 while(true)switch(s){case 0:A.oC("[DB] \ud83d\udd0d Preparing to open WasmDatabase for user: "+a)
-p=A.eB("/sqlite3.wasm",0,null)
+p=A.eB("sqlite3.wasm",0,null)
 s=3
-return A.h(A.apU("data_entry_db_"+a,A.eB("/drift_worker.js",0,null),p),$async$bOW)
+return A.h(A.apU("data_entry_db_"+a,A.eB("drift_worker.js",0,null),p),$async$bOW)
 case 3:o=c
 A.oC("[DB] \u2705 WasmDatabase opened for user: "+a)
 q=o.a
